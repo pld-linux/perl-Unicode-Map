@@ -27,7 +27,7 @@ odwrotnie.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %doc README Changes
 %attr(755,root,root) %{_bindir}/*
