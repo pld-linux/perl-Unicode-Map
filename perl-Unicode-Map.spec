@@ -5,7 +5,7 @@ Summary:	Perl Unicode::Map module
 Summary(pl):	Modu³ Perla Unicode::Map
 Name:		perl-Unicode-Map
 Version:	0.112
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
