@@ -9,7 +9,7 @@ Summary:	Perl Unicode::Map module
 Summary(pl):	Modu³ Perla Unicode::Map
 Name:		perl-Unicode-Map
 Version:	0.112
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
