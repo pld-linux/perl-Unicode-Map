@@ -1,16 +1,18 @@
+%include	/usr/lib/rpm/macros.perl
 Summary: 	Perl Unicode-Map module
 Summary(pl):	Modu³ Perla Unicode-Map
 Name: 		perl-Unicode-Map
 Version: 	0.105
-Release: 	4
+Release: 	5
 Copyright: 	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source: 	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/Unicode-Map-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl-Startup
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-Startup
 BuildRoot:      /tmp/%{name}-%{version}-root
 
 %description
@@ -25,10 +27,7 @@ i odwrotnie.
 
 %build
 perl Makefile.PL
-make CFLAGS="$RPM_OPT_FLAGS"
-
-%clean 
-rm -rf $RPM_BUILD_ROOT
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -45,6 +44,9 @@ strip --strip-unneeded $RPM_BUILD_ROOT%{perl_sitearch}/auto/Unicode/Map/*.so
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[13]/* \
 	README Changes
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files 
 %defattr(644,root,root,755)
