@@ -2,8 +2,8 @@
 Summary:	Perl Unicode-Map module
 Summary(pl):	Modu³ Perla Unicode-Map
 Name:		perl-Unicode-Map
-Version:	0.105
-Release:	5
+Version:	0.109
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -39,7 +39,7 @@ strip --strip-unneeded $RPM_BUILD_ROOT%{perl_sitearch}/auto/Unicode/Map/*.so
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Unicode/Map/
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[13]/* \
