@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Unicode
 %define	pnam	Map
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl Unicode-Map module
 Summary(pl):	Modu³ Perla Unicode-Map
 Name:		perl-Unicode-Map
 Version:	0.110
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Modu³ Unicode-Map konwertuje ³añcuchy znaków na format Unicode UCS2 i
 odwrotnie.
 
 %prep
-%setup -q -n Unicode-Map-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
