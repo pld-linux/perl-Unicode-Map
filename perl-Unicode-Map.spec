@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Unicode
-%define	pnam	Map
+%define		pdir	Unicode
+%define		pnam	Map
 Summary:	Perl Unicode::Map module
 Summary(pl):	Modu³ Perla Unicode::Map
 Name:		perl-Unicode-Map
