@@ -1,13 +1,13 @@
 %include	/usr/lib/rpm/macros.perl
-Summary: 	Perl Unicode-Map module
+Summary:	Perl Unicode-Map module
 Summary(pl):	Modu³ Perla Unicode-Map
-Name: 		perl-Unicode-Map
-Version: 	0.105
-Release: 	5
-Copyright: 	GPL
+Name:		perl-Unicode-Map
+Version:	0.105
+Release:	5
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source: 	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/Unicode-Map-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/Unicode-Map-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Startup
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Unicode-Map module converts strings from and to Unicode UCS2 format.
 
 %description -l pl
-Modu³ Unicode-Map konwertuje ³añcuchy znaków na format Unicode UCS2
-i odwrotnie.
+Modu³ Unicode-Map konwertuje ³añcuchy znaków na format Unicode UCS2 i
+odwrotnie.
 
 %prep
 %setup -q -n Unicode-Map-%{version}
