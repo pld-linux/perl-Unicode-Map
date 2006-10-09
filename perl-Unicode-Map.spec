@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	edaa8fc5ddf0e5d805e274283dd0625d
+URL:		http://search.cpan.org/dist/Unicode-Map/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Startup
 BuildRequires:	rpm-perlprov >= 4.1-13
