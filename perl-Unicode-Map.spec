@@ -6,7 +6,7 @@
 %define		pdir	Unicode
 %define		pnam	Map
 Summary:	Perl Unicode::Map module
-Summary(pl):	Modu≥ Perla Unicode::Map
+Summary(pl.UTF-8):   Modu≈Ç Perla Unicode::Map
 Name:		perl-Unicode-Map
 Version:	0.112
 Release:	3
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Unicode::Map module converts strings from and to Unicode UCS2 format.
 
-%description -l pl
-Modu≥ Unicode::Map konwertuje ≥aÒcuchy znakÛw na format Unicode UCS2 i
+%description -l pl.UTF-8
+Modu≈Ç Unicode::Map konwertuje ≈Ça≈Ñcuchy znak√≥w na format Unicode UCS2 i
 odwrotnie.
 
 %prep
