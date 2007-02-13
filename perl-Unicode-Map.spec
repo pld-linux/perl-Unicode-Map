@@ -6,7 +6,7 @@
 %define		pdir	Unicode
 %define		pnam	Map
 Summary:	Perl Unicode::Map module
-Summary(pl.UTF-8):   Moduł Perla Unicode::Map
+Summary(pl.UTF-8):	Moduł Perla Unicode::Map
 Name:		perl-Unicode-Map
 Version:	0.112
 Release:	3
