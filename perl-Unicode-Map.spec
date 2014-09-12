@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Unicode/Map
 %{perl_vendorarch}/Unicode/Map.pm
 %dir %{perl_vendorarch}/auto/Unicode/Map
-%{perl_vendorarch}/auto/Unicode/Map/Map.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Unicode/Map/Map.so
 %{_mandir}/man[13]/*
